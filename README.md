@@ -120,13 +120,3 @@ cp terraform.tfvars.example terraform.tfvars
 gitignored. See [`.gitignore`](.gitignore) for the full list.
 
 ---
-
-## Notes & deliberate simplifications
-
-- The backend trusts the authenticated frontend for the trainee's identity
-  rather than re-verifying the JWT server-side. The security boundary is the
-  login gate — you can't reach the widget without authenticating. This is a
-  reasonable scope decision for an internal enablement tool, not a
-  customer-facing product handling sensitive data.
-- The frontend uses the implicit OAuth flow for simplicity. A production version
-  would use Authorization Code + PKCE.
