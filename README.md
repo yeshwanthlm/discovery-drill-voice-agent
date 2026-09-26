@@ -16,7 +16,7 @@ reporting.
 
 ## ElevenLabs Agent Workflow
 
-![Screenshot 2026-09-26 at 7 54 02 PM](https://github.com/user-attachments/assets/cb0eb4b6-47b1-4591-89eb-93603b2e741f)
+![Screenshot 2026-09-26 at 7 54 02 PM](https://github.com/user-attachments/assets/80c8c00b-0412-4890-b66d-d9b0ba5201e8)
 
 ---
 
