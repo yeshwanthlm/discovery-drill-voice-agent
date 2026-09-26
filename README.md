@@ -10,6 +10,15 @@ voice experience, with a serverless AWS backend for session continuity and
 reporting.
 
 ---
+## Architecture Diagram
+
+<img width="5125" height="1612" alt="image" src="https://github.com/user-attachments/assets/424c2fe4-4038-44d7-9341-af696034240c" />
+
+## ElevenLabs Agent Workflow
+
+![Screenshot 2026-09-26 at 7 54 02 PM](https://github.com/user-attachments/assets/cb0eb4b6-47b1-4591-89eb-93603b2e741f)
+
+---
 
 ## Why this exists
 
