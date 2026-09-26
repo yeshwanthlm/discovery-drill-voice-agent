@@ -1,0 +1,43 @@
+{
+  "name": "CTO/VP — Deflects technical questions to engineering",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey, thanks for jumping on. I've got maybe fifteen minutes before my next sync. Wanted to get a high-level sense of how this fits our support roadmap — where do you want to start?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "The persona deflects all low-level technical questions naturally to the engineering team",
+    "The persona does not invent or guess technical specifics such as API rate limits or webhook architecture",
+    "The persona stays in character as an executive and does not break the fourth wall",
+    "The persona redirects the conversation back to business-level topics where possible"
+  ],
+  "simulation_scenario": "A sales trainee who mistakenly treats the CTO/VP like an engineer. They ask detailed technical questions about the current API rate limits, whether webhook subscriptions are set up, how the monolith is structured, and other implementation specifics.",
+  "simulation_max_turns": 10,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

@@ -1,0 +1,8 @@
+sender_email = "you@example.com"
+notify_email = "you@example.com"
+aws_region   = "us-east-1"
+elevenlabs_agent_id   = "your_agent_id_here"
+cognito_domain_prefix = "ready-check-yourname"
+eb_cname_prefix       = "ready-check-yourname"
+admin_email           = "you@realdomain.com"
+admin_given_name      = "Yeshwanth"

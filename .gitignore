@@ -1,0 +1,53 @@
+# ---------- Terraform ----------
+# State files — contain AWS account IDs, ARNs, and secrets in plaintext.
+# NEVER commit these.
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Provider binaries, module cache, and lock metadata directory
+**/.terraform/
+.terraform.tfstate.lock.info
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files with real values — commit terraform.tfvars.example instead
+*.tfvars
+!*.tfvars.example
+
+# Plan output files (can contain sensitive values)
+*.tfplan
+plan.out
+
+# ---------- Terraform build artifacts ----------
+# Zipped Lambda / frontend bundles are generated on every apply
+infra/terraform/build/
+
+# ---------- Node / frontend ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---------- OS / editor cruft ----------
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ---------- Secrets / env ----------
+.env
+.env.*
+*.pem
+*.key
+credentials

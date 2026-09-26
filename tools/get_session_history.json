@@ -1,0 +1,82 @@
+{
+  "type": "webhook",
+  "name": "get_session_history",
+  "description": "Checks whether this trainee has a previous session recorded, and returns their weakest-scoring category and last stakeholder type if so.",
+  "disable_interruptions": false,
+  "interruption_mode": "allow",
+  "force_pre_tool_speech": false,
+  "pre_tool_speech": "auto",
+  "tool_call_sound": null,
+  "tool_call_sound_behavior": "auto",
+  "tool_error_handling_mode": "auto",
+  "execution_mode": "immediate",
+  "follow_redirects": false,
+  "follow_redirects_allowed_domains": [],
+  "api_schema": {
+    "url": "https://xxxxxxxxxxxxxxxxxxxxxxxx.lambda-url.us-east-1.on.aws/",
+    "method": "POST",
+    "path_params_schema": [],
+    "query_params_schema": [],
+    "request_body_schema": {
+      "id": "body",
+      "type": "object",
+      "description": "Request body containing the trainee's email",
+      "properties": [
+        {
+          "id": "trainee_email",
+          "type": "string",
+          "value_type": "llm_prompt",
+          "description": "The trainee's email — this is already known from {{trainee_email}} in context, pass that exact value, never ask for it",
+          "dynamic_variable": "",
+          "constant_value": "",
+          "enum": null,
+          "is_system_provided": false,
+          "required": true
+        }
+      ],
+      "required": false,
+      "dynamic_variable": "",
+      "value_type": "llm_prompt"
+    },
+    "request_headers": [],
+    "content_type": "application/json",
+    "auth_connection": null,
+    "mtls_auth_connection": null,
+    "response_filter": null
+  },
+  "assignments": [
+    {
+      "source": "response",
+      "dynamic_variable": "has_history",
+      "value_path": "has_history",
+      "sanitize": false,
+      "preserve_native_type": false
+    },
+    {
+      "source": "response",
+      "dynamic_variable": "weakest_area",
+      "value_path": "weakest_area",
+      "sanitize": false,
+      "preserve_native_type": false
+    },
+    {
+      "source": "response",
+      "dynamic_variable": "last_completeness_pct",
+      "value_path": "last_completeness_pct",
+      "sanitize": false,
+      "preserve_native_type": false
+    },
+    {
+      "source": "response",
+      "dynamic_variable": "last_stakeholder_type",
+      "value_path": "last_stakeholder_type",
+      "sanitize": false,
+      "preserve_native_type": false
+    }
+  ],
+  "response_timeout_secs": 8,
+  "dynamic_variables": {
+    "dynamic_variable_placeholders": {}
+  },
+  "response_mocks": []
+}

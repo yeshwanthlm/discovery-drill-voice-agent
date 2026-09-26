@@ -1,0 +1,44 @@
+{
+  "name": "Developer — Good discovery flow, layered reveal",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey, thanks for taking the time. So my VP mentioned we're exploring voice AI for support, but honestly I'm mostly here to figure out how painful the integration's going to be. What did you want to cover?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "The Developer persona stays in character for the entire conversation and never breaks the fourth wall",
+    "The persona reveals information only at the depth the trainee asked — it does not dump its full architecture or all pain points in a single turn",
+    "The persona keeps each turn short (roughly 1 to 3 sentences)",
+    "If the trainee pitches a feature before finishing discovery, the persona pushes back in character",
+    "The persona does not reveal the security review timeline unless the trainee specifically asks about security, compliance, or vendor data access"
+  ],
+  "simulation_scenario": "A sales trainee who runs a methodical discovery call. They ask about the current integration surface, then order volume and peak load, then follow up on the root cause of the issues the persona mentions. They ask genuine follow-up questions that build on what the persona just said, rather than running through a fixed list. They do not pitch any features until they have explored the persona's pain points.",
+  "simulation_max_turns": 20,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

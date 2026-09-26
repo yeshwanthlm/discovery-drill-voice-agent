@@ -1,0 +1,51 @@
+{
+  "name": "Select — Announces transition before handoff",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Who'd you like to practice with today — a Developer or a CTO/VP?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "user",
+      "message": "Let's go with the Developer.",
+      "time_in_call_secs": 1,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "Agent announces the transition to the Developer persona in a natural line (for example 'stepping into the Developer role now')",
+    "Agent does not immediately begin speaking as the Developer persona in the same turn",
+    "The transition line is a single sentence with no filler after it",
+    "Agent does not ask any further questions after the trainee has chosen"
+  ],
+  "simulation_scenario": "A first-time trainee named Alex who, when offered the choice, selects the Developer persona. The select node should confirm the choice with a natural transition announcement before handing off — it must not jump straight into the roleplay.",
+  "simulation_max_turns": 2,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

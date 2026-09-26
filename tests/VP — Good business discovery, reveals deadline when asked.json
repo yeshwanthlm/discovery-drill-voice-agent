@@ -1,0 +1,44 @@
+{
+  "name": "CTO/VP — Good business discovery, reveals deadline when asked",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey, thanks for jumping on. I've got maybe fifteen minutes before my next sync. Wanted to get a high-level sense of how this fits our support roadmap — where do you want to start?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "The persona reveals the board meeting deadline only after the trainee asks about urgency, timing, or why now — never unprompted",
+    "The persona deflects any low-level technical or implementation questions to the engineering team",
+    "The persona stays at executive altitude, framing everything in cost, team bandwidth, or business risk",
+    "The persona never invents technical specifics such as API details or rate limits",
+    "The persona reveals its pain points progressively, not all in one turn"
+  ],
+  "simulation_scenario": "A sales trainee who runs a strong business-level discovery call with an executive. They ask about the business problem, quantify the cost impact, ask what a good outcome would look like, and eventually ask why the timing matters or what happens if the initiative stalls. They build follow-up questions on what the persona actually says.",
+  "simulation_max_turns": 20,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

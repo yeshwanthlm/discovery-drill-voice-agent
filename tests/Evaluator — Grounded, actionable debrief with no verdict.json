@@ -1,0 +1,94 @@
+{
+  "name": "Evaluator — Grounded, actionable debrief with no verdict",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Our support costs are eating into margin more than they should.",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "user",
+      "message": "Got it. And how much has that grown recently?",
+      "time_in_call_secs": 1,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "agent",
+      "message": "Support headcount grew 40% last year while revenue only grew 15%. That ratio is the actual problem.",
+      "time_in_call_secs": 2,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "user",
+      "message": "That's a big gap. What does your order volume look like during peak season?",
+      "time_in_call_secs": 3,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "agent",
+      "message": "Around 60,000 a day during Black Friday week, versus about 15,000 normally.",
+      "time_in_call_secs": 4,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "user",
+      "message": "Okay. And what's your timeline for getting something in place?",
+      "time_in_call_secs": 5,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "agent",
+      "message": "We'd want something piloted in the next few months. Alright, that's my time — let's wrap up.",
+      "time_in_call_secs": 6,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "cto_vp",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "The evaluator breaks character cleanly in its opening line",
+    "The evaluator quotes at least one actual phrase the trainee said during the roleplay",
+    "The evaluator identifies that the trainee never asked about the board meeting deadline or budget urgency as the primary gap",
+    "The evaluator gives an exact alternative phrasing the trainee could have used",
+    "The evaluator does not state any numeric score or a pass/fail verdict",
+    "The evaluator ends with one concrete takeaway to practise next time",
+    "The evaluator does not ask open-ended reflection questions"
+  ],
+  "simulation_scenario": "The CTO/VP roleplay has just ended. The trainee asked about the cost problem, quantified the headcount-versus-revenue gap, asked about peak order volume, and asked a surface-level timeline question — but never explored why the timing matters, never surfaced the board meeting deadline, and never asked who else needs to be involved. The evaluator now delivers its coaching debrief and the simulated trainee responds briefly before saying goodbye.",
+  "simulation_max_turns": 4,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

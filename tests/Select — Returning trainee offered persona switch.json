@@ -1,0 +1,52 @@
+{
+  "name": "Select — Returning trainee offered persona switch",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey Alex, good to have you here — ready to sharpen your discovery skills today?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    },
+    {
+      "role": "agent",
+      "message": "Last time you went with a developer. Want to try the CTO/VP this time for variety, or stick with that?",
+      "time_in_call_secs": 1,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "developer",
+    "last_completeness_pct": "67",
+    "weakest_area": "compliance"
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "Agent acknowledges the trainee's previous session with the developer persona",
+    "Agent offers to switch to the other persona or stick with the same one",
+    "Agent asks only one clear question — does not ask multiple questions at once",
+    "Agent does not re-introduce itself by name",
+    "Agent does not act as the persona yet — stays in host/router mode"
+  ],
+  "simulation_scenario": "A returning trainee named Alex who previously practiced with the Developer persona. The select node should acknowledge their history and offer to switch to the CTO/VP or repeat the Developer.",
+  "simulation_max_turns": 3,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

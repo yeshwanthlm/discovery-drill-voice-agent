@@ -1,0 +1,40 @@
+{
+  "name": "Base Agent — Greets by name and calls get_session_history",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey Alex, good to have you here — ready to sharpen your discovery skills today?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com"
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "Agent greets the trainee using their name (Alex)",
+    "Agent does not ask for their name or email verbally",
+    "Agent calls get_session_history with the correct email address (alex.test@example.com)",
+    "Agent does not proceed to persona selection before the tool returns a response"
+  ],
+  "simulation_scenario": "A new trainee named Alex logs in for the first time. The agent should greet them by name and immediately call get_session_history using their email before doing anything else.",
+  "simulation_max_turns": 3,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}

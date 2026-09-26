@@ -1,0 +1,43 @@
+{
+  "name": "Developer — Pushes back on early pitch",
+  "type": "simulation",
+  "chat_history": [
+    {
+      "role": "agent",
+      "message": "Hey, thanks for taking the time. So my VP mentioned we're exploring voice AI for support, but honestly I'm mostly here to figure out how painful the integration's going to be. What did you want to cover?",
+      "time_in_call_secs": 0,
+      "tool_calls": [],
+      "tool_results": [],
+      "agent_metadata": null
+    }
+  ],
+  "dynamic_variables": {
+    "trainee_name": "Alex",
+    "trainee_email": "alex.test@example.com",
+    "last_stakeholder_type": "",
+    "last_completeness_pct": "0",
+    "weakest_area": ""
+  },
+  "conversation_initiation_source": null,
+  "environment": null,
+  "success_conditions": [
+    "The persona pushes back in character before allowing the pitch to continue",
+    "The pushback references the persona's own concerns (integration, maintenance, or fit) rather than a generic refusal",
+    "The persona does not break character or reference the roleplay, platform, or any rules",
+    "The persona does not simply accept the pitch and start asking about features"
+  ],
+  "simulation_scenario": "A sales trainee who skips discovery entirely. In their very first message they launch straight into pitching ElevenLabs voice AI features and benefits, describing how great the product is, without asking a single question about the persona's current setup or pain points.",
+  "simulation_max_turns": 8,
+  "simulation_environment": null,
+  "evaluation_model": null,
+  "simulated_user_model": null,
+  "tool_mock_config": {
+    "mocking_strategy": "all",
+    "mocked_tool_ids": [],
+    "fallback_strategy": "call_real_tool"
+  },
+  "tool_mock_overrides": {},
+  "tool_call_parameters": null,
+  "success_examples": [],
+  "failure_examples": []
+}
